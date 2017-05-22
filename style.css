@@ -1,7 +1,31 @@
-.container {
-	margin: 0 auto;
+body {
+	background-image: url("background.png");
 }
 
-.wrapper {
+.container {
+	margin: 0 auto;
+	background-color: white;
+	text-align: center;
+}
+
+/*.wrapper {
 	visibility: hidden;
+}*/
+
+.header {
+	font-family: 'Electrolize', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+button {
+	font-family: 'Electrolize', sans-serif;
+}
+
+.answers {
+	padding: 10px;
 }

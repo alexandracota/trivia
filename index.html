@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script
-	src="https://code.jquery.com/jquery-3.2.1.js"
-	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	crossorigin="anonymous"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<title>80's Movie Trivia!</title>
@@ -16,46 +16,182 @@
 <div class="container">
 
 	<h1 class="header">80's Movie Trivia</h1>
-	<input class="btn btn-default" type="Start" value="Start">
+	<p>Click to play!</p>
+	<button class="btn btn-default start" type="submit">START</button>
 
-<wrapper class="wrapper">	
+<div class="wrapper">	
 	<h3 id="timer"></h3>
-	<h3 class="question-1">1.What special talent did Molly Ringwald have in "The Breakfast Club?"</h3>
-		<p id="answer-1A">a. Make dolphin sounds</p>
-		<p id="answer-1B">b. Make savory crepes</p>
-		<p id="answer-1C">c. Run a 5 minute mile</p>
-		<p id="answer-1D">d. Put lipstick on with no hands</p>
-	<h3 class="question-2">2. In "The Karate Kid", what color did Daniel have to paint Mr. Miyagi's house?</h3>
-		<p id="answer-2A">a. Green</p>
-		<p id="answer-2B">b. Pink</p>
-		<p id="answer-2C">c. White</p>
-		<p id="answer-2D">d. Blue</p>
-	<h3 class="question-3">3.What is the school secretary's name in "Ferris Bueller's Day Off"?</h3>
-		<p id="answer-3A">a. Janet</p>
-		<p id="answer-3B">b. Spongebob</p>
-		<p id="answer-3C">c. Grace</p>
-		<p id="answer-3D">d. George</p>
-	<h3 class="question-4">4.In "Sixteen Candles", what was the name of the foreign exchange student?</h3>
-		<p id="answer-4A">a. Dong Duck Long</p>
-		<p id="answer-4B">b. Long Duck Dong</p>
-		<p id="answer-4C">c. Duck Long Duck</p>
-		<p id="answer-4D">d. Gerald</p>
-	<h3 class="question-5">5.What fraternity do Lewis and Gilbert join in "Revenge of the Nerds"?</h3>
-		<p id="answer-5A">a. Lambda Lambda Lambda</p>
-		<p id="answer-5B">b. Alpha Epsilon Pi</p>
-		<p id="answer-5C">c. Gamma Phi Beta</p>
-		<p id="answer-5D">d. Pi Alpha Phi</p>
-	<h3 class="question-6">6.In "Flashdance", what type of school does Alex audition for?</h3>
-		<p id="answer-6A">a. Culinary school</p>
-		<p id="answer-6B">b. Circus school</p>
-		<p id="answer-6C">c. Ballet school</p>
-		<p id="answer-6D">d. Coding Bootcamp</p>
-	<h3 class="question-7">7.In "E.T."" which candy was used to lure E.T. out of the closet?</h3>
-		<p id="answer-7A">a. Reese's Pieces</p>
-		<p id="answer-7B">b. Jellybeans</p>
-		<p id="answer-7C">c. M&amp;M's</p>
-		<p id="answer-7D">d. Pop Tarts</p>
-</wrapper>
+	<!-- Question 1 -->
+	<h3 class="question question-1">1. What special talent did Molly Ringwald have in "The Breakfast Club?"</h3>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-1A" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">a. Make dolphin sounds</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-1B" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">b. Make savory crepes</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-1C" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">c. Run a 5 minute mile</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-1D" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">d. Put lipstick on with no hands</span>
+		</label>
+		<br>
+		<br>
+	<!-- Question 2 -->
+	<h3 class=" question question-2">2. In "The Karate Kid", what color did Daniel have to paint Mr. Miyagi's house?</h3>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-2A" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">a. Green</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-2B" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">b. Pink</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-2C" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">c. White</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-2D" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">d. Blue</span>
+		</label>
+		<br>
+		<br>
+	<!-- Question 3 -->
+	<h3 class="question question-3">3. What is the school secretary's name in "Ferris Bueller's Day Off"?</h3>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-3A" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">a. Janet</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-3B" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">b. Spongebob</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-3C" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">c. Grace</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-3D" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">d. George</span>
+		</label>
+		<br>
+		<br>
+	<!-- Question 4 -->
+	<h3 class="question question-4">4. In "Sixteen Candles", what was the name of the foreign exchange student?</h3>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-4A" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">a. Sam</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-4B" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">b. Dong</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-4C" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">c. Duck Duck</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-4D" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">d. Gerald</span>
+		</label>
+		<br>
+		<br>
+	<!-- Question 5 -->
+	<h3 class="question question-5">5. What fraternity do Lewis and Gilbert join in "Revenge of the Nerds"?</h3>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-5A" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">a. Lambda Lambda Lambda</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-5B" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">b. Alpha Epsilon Pi</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-5C" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">c. Gamma Phi Beta</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-5D" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">d. Gamma Delta Iota</span>
+		</label>
+		<br>
+		<br>
+	<!-- Question 6 -->
+	<h3 class="question question-6">6. In "Flashdance", what type of school does Alex audition for?</h3>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-6A" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">a. Culinary school</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-6B" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">b. Circus school</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-6C" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">c. Ballet School</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-6D" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">d. UC Berkeley Extension Coding Bootcamp</span>
+		</label>
+		<br>
+		<br>
+	<!-- Question 7 -->
+	<h3 class="question question-7">7. In "E.T."" which candy was used to lure E.T. out of the closet?</h3>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-7A" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">a. Reese's Pieces</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-7B" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">b. Jellybeans</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-7C" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">c. M&amp;M's</span>
+		</label>
+		<label class="custom-control custom-radio answers">
+		<input id="answer-7D" name="radio" type="radio" class="custom-control-input">
+		<span class="custom-control-indicator"></span>
+		<span class="custom-control-description">d. Pop Tarts</span>
+		</label>
+		<br>
+		<br>
+		<br>
+		<br>
+</div>
 	
 
 

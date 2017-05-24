@@ -1,64 +1,103 @@
+var correctAnswerCounter = 0;
+var incorrectAnswerCounter = 0;
+
 //Hides questions at start of game.
 $(document).ready(function() {
 	$(".question").hide();
 	$(".answers").hide();
 
-	
-//Displays questions when start button is clicked.
-$(".start").click(function() {
-	$(".question").show();
-	$(".answers").show();
+
+	//Displays questions when start button is clicked.
+	$(".start").click(function() {
+		$(".question").show();
+		$(".answers").show();
+
+		//Set Timeout.
+		var timeOut = function() {	
+		};
+		//Time out after 30 seconds.
+		setTimeout(timeOut, 1000 * 30);
+		//Timer count set to 30.
+		var count = 31;
+		//Counter to count the seconds.
+		var counter = setInterval(timer, 1000);
+		//Function to count down and clear when finished.
+		//var timer = 
+		function timer() {
+			count--;
+			if (count <= 0) {
+				clearInterval(counter);
+				$("#timer").html("00:00 seconds");
+				console.log("time's up!");
+			}
+			else {
+				$("#timer").html("Time remaining: 00:" + count + " seconds");
+			}
+		};
 
 	});
 
 });
 
+//Create answer counter.
 
-//Timer count set to 30.
-var count = 30;
+var answerCounter = 0;
 
-//Counter to count the seconds.
-var counter = setInterval(timer, 1000);
-
-//Function to count down and clear when finished.
-function timer() {
-count = count--;
-if (count <= 0) {
-	clearInterval(counter);
-	return;
+//If group 1 has an answer selected, add to answer counter.
+function question1() { 
+	if ($('input[name="radio-1"]').is(':checked')) {
+		answerCounter++;
+	} 
+	else if (!$('input[name="radio-1"]').is(':checked')) {
+		console.log("Take a guess!");
 	};
+
+question1();
+console.log(answerCounter);
 };
 
-// //Call the timer function.
-// timer();
-// setInterval();
-// console.log(count);
+//If group 2 has an answer selected, add to answer counter.
 
-// //Display live timer on the document.
-// $("#timer").html(count + " seconds");
+	if ($('input[name="radio-2"]:checked')) {
+		answerCounter++;
+	};
+	
+console.log(answerCounter);
 
+//If group 3 has an answer selected, add to answer counter.
+	if ($('input[name="radio-3"]:checked')) {
+		answerCounter++;
+	};
+	
+console.log(answerCounter);
 
+//If group 4 has an answer selected, add to answer counter.
+	if ($('input[name="radio-4"]:checked')) {
+		answerCounter++;
+	};
+	
+console.log(answerCounter);
 
-//
-//setTimeout(thirtySeconds, 1000 * 30);
+//If group 5 has an answer selected, add to answer counter.
+	if ($('input[name="radio-5"]:checked')) {
+		answerCounter++;
+	};
+	
+console.log(answerCounter);
 
+//If group 6 has an answer selected, add to answer counter.
+	if ($('input[name="radio-6"]:checked')) {
+		answerCounter++;
+	};
+	
+console.log(answerCounter);
 
-
-// function thirtySeconds() {
-// 	$(".timer").append("")
-// }
-
-// function timeUp() {
-// 	console.log("done");
-// 	$(".timer").append("<h3>Time's up!</h3>");
-// 	console.log("time is up");
-// };
-
-// timeUp();
-
-
-
-// });
+//If group 7 has an answer selected, add to answer counter.
+	if ($('input[name="radio-7"]:checked')) {
+		answerCounter++;
+	};
+	
+console.log(answerCounter);
 
 
 

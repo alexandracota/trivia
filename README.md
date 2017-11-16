@@ -1,5 +1,5 @@
 # trivia
 
-You think you know a thing or two about the TV show, Friends? Test your knowledge in this Friends Trivia game.
+You think you know your 80's movies? Play this trivia game to test your knowledge.
 
 https://alexandracota.github.io/trivia/
